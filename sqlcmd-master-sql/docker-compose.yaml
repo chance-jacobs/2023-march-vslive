@@ -1,0 +1,10 @@
+version: "1"
+services:
+    db1:
+        build: ./Db
+        environment:
+            SA_PASSWORD: "Sql2022isfast"
+            ACCEPT_EULA: "Y"
+        ports:
+            - "1402:1433"
+        container_name: hdot_container1

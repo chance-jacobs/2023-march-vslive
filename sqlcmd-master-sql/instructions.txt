@@ -1,0 +1,5 @@
+Instructions
+
+1) docker stop hdot_container1
+2) docker rm hdot_container1
+3) docker-compose up --build --remove-orphans --force-recreate -d
