@@ -1,0 +1,6 @@
+INSERT INTO [dbo].[ProgramProjectIsland] ([ProgramProjectId] ,[IslandId]) VALUES ((select ProgramProjectId from ProgramProject where ProgramProjectName ='Bridge Inspection and Scour Monitoring') ,(select IslandId from Island where IslandName ='Statewide'))
+INSERT INTO [dbo].[ProgramProjectIsland] ([ProgramProjectId] ,[IslandId]) VALUES ((select ProgramProjectId from ProgramProject where ProgramProjectName ='Bridge Preservation Repairs Line Item') ,(select IslandId from Island where IslandName ='Statewide'))
+INSERT INTO [dbo].[ProgramProjectIsland] ([ProgramProjectId] ,[IslandId]) VALUES ((select ProgramProjectId from ProgramProject where ProgramProjectName ='Bridge Rehabilitation Line Item') ,(select IslandId from Island where IslandName ='Statewide'))
+INSERT INTO [dbo].[ProgramProjectIsland] ([ProgramProjectId] ,[IslandId]) VALUES ((select ProgramProjectId from ProgramProject where ProgramProjectName ='Placeholder Pavement PPR') ,(select IslandId from Island where IslandName ='Statewide'))
+INSERT INTO [dbo].[ProgramProjectIsland] ([ProgramProjectId] ,[IslandId]) VALUES ((select ProgramProjectId from ProgramProject where ProgramProjectName ='Safety Line Item') ,(select IslandId from Island where IslandName ='Statewide'))
+GO

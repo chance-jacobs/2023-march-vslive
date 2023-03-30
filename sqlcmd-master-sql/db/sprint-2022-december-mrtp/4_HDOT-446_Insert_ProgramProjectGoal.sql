@@ -1,0 +1,7 @@
+INSERT INTO [dbo].[ProgramProjectGoal] ([ProgramProjectId],[GoalId]) VALUES ((select ProgramProjectId from ProgramProject where ProgramProjectName = 'Bridge Preservation Repairs Line Item'), (select GoalId from Goal where GoalName = 'System Preservation'))
+INSERT INTO [dbo].[ProgramProjectGoal] ([ProgramProjectId],[GoalId]) VALUES ((select ProgramProjectId from ProgramProject where ProgramProjectName = 'Bridge Preservation Repairs Line Item'), (select GoalId from Goal where GoalName = 'Resiliency'))
+INSERT INTO [dbo].[ProgramProjectGoal] ([ProgramProjectId],[GoalId]) VALUES ((select ProgramProjectId from ProgramProject where ProgramProjectName = 'Bridge Rehabilitation Line Item'), (select GoalId from Goal where GoalName = 'System Preservation'))
+INSERT INTO [dbo].[ProgramProjectGoal] ([ProgramProjectId],[GoalId]) VALUES ((select ProgramProjectId from ProgramProject where ProgramProjectName = 'Bridge Rehabilitation Line Item'), (select GoalId from Goal where GoalName = 'Resiliency'))
+INSERT INTO [dbo].[ProgramProjectGoal] ([ProgramProjectId],[GoalId]) VALUES ((select ProgramProjectId from ProgramProject where ProgramProjectName = 'Placeholder Pavement PPR'), (select GoalId from Goal where GoalName = 'System Preservation'))
+INSERT INTO [dbo].[ProgramProjectGoal] ([ProgramProjectId],[GoalId]) VALUES ((select ProgramProjectId from ProgramProject where ProgramProjectName = 'Safety Line Item'), (select GoalId from Goal where GoalName = 'Safety'))
+GO

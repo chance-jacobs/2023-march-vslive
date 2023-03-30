@@ -7,4 +7,4 @@ services:
             ACCEPT_EULA: "Y"
         ports:
             - "1402:1433"
-        container_name: hdot_container2
+        container_name: hdot_container1

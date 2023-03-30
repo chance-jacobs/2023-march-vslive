@@ -1,0 +1,5 @@
+INSERT INTO [dbo].[FederalEnvironmentalDocument] ([FederalEnvironmentalDocumentName] ,[CreatedBy] ,[CreatedDate] ,[SortOrder] ,[IsActive]) VALUES ('CE - Categorical Exclusion' ,'DataLoad' ,GETDATE() ,1 ,1)
+INSERT INTO [dbo].[FederalEnvironmentalDocument] ([FederalEnvironmentalDocumentName] ,[CreatedBy] ,[CreatedDate] ,[SortOrder] ,[IsActive]) VALUES ('EA - Environmental Assessment' ,'DataLoad' ,GETDATE() ,2 ,1)
+INSERT INTO [dbo].[FederalEnvironmentalDocument] ([FederalEnvironmentalDocumentName] ,[CreatedBy] ,[CreatedDate] ,[SortOrder] ,[IsActive]) VALUES ('EIS - Environmental Impact Statement' ,'DataLoad' ,GETDATE() ,3 ,1)
+INSERT INTO [dbo].[FederalEnvironmentalDocument] ([FederalEnvironmentalDocumentName] ,[CreatedBy] ,[CreatedDate] ,[SortOrder] ,[IsActive]) VALUES ('Unknown' ,'DataLoad' ,GETDATE() ,4 ,1)
+GO
