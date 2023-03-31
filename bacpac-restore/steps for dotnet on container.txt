@@ -1,0 +1,25 @@
+export PATH=$PATH:$HOME/.dotnet:$HOME/.dotnet/tools
+
+
+
+./dotnet-install.sh --architecture x64 --install-dir /usr/share/dotnet/ --runtime dotnet --version 6.0.0
+
+
+dotnet tool install -g microsoft.sqlpackage
+
+sqlpackage /a:Import /tcs:"Server=localhost;Database=sfwmdc43;User Id=sa;Password=YourS3cureP@ass;TrustServerCertificate=True;" /sf:/tmp/sfwmdc43dbdev-2023-3-29-9-28.bacpac
+
+
+It was not possible to find any compatible framework version
+The framework 'Microsoft.NETCore.App', version '6.0.0' was not found.
+  - The following frameworks were found:
+      5.0.15 at [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+
+You can resolve the problem by installing the specified framework and/or SDK.
+
+The specified framework can be found at:
+  - https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=6.0.0&arch=x64&rid=ubuntu.20.04-x64
+  
+  
+  
+  

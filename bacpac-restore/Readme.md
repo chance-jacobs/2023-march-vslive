@@ -1,0 +1,1 @@
+ docker run --name sfwmdC43 -p 1404:1433 -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=$SqlPwd01!' -d mcr.microsoft.com/mssql/server:2022-latest

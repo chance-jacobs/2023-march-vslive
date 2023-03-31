@@ -19,4 +19,5 @@ SELECT
 FROM [dbo].[Branch] B
     LEFT JOIN dbo.Section S
         ON S.BranchId = B.BranchId
-WHERE S.SectionId IS NULL;
+WHERE S.SectionId IS NULL
+GO
