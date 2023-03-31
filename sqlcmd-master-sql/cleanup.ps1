@@ -1,7 +1,12 @@
-docker-compose down
-docker stop sql2022latest
-docker stop bwsql
-docker rm sql2022latest
-docker rm bwsql
-docker volume rm sql2022volume
+# Set container and image names
+$containername=$args[0]
+$imagename=$args[1]
 
+# Stop the contriner
+docker stop $containername
+
+# Remove the container
+docker rm $containername
+
+# Remove the image
+docker rmi $imagename

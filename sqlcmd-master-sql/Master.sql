@@ -1,4 +1,4 @@
-﻿:setvar basePath "/code/"
+﻿:setvar basePath "/src/"
 :setvar path "sprint-2022-december-mrtp"
 :r $(basePath)$(path)/InitialDBCreation.sql
 :r $(basePath)$(path)/1_HDOT-446_Insert_FederalEnvironmentalDocument.sql

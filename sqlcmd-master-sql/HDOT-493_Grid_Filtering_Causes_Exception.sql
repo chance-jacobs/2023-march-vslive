@@ -1,9 +1,3 @@
--- =============================================
--- Author:		Matt Erker
--- Create date: 02/24/2023
--- Description:	Returns a string of the ProgramProject status
--- *** Any changes here must be also made in ProgramProjectDC.GetProgramProjectStatus
--- =============================================
 CREATE OR ALTER FUNCTION [dbo].[ProgramProjectStatusString] 
 (
 	-- Add the parameters for the function here
@@ -34,5 +28,3 @@ BEGIN
 	RETURN @returnValue
 END
 GO
-
-
