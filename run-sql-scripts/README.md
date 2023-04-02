@@ -9,7 +9,7 @@ Steps to show a demonstrations of the fundamentals of using SQL Server Container
 
 ## Commands to create the sql container and database
 
-Open powershell
+Open powershell as administrator
 
 Create the volume
 
@@ -28,10 +28,17 @@ Run the container
 docker run --mount source=hdotvol1,destination=/var/opt/mssql  -p 1402:1433 --name hdot1 -d hdot_image_1
 ```
 
+Run this in powershell before cleanup if you get a not digitally signed error
+
+```
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted
+```
+
 Remove container and image to strat from scratch
 
 ```
 ./cleanup.ps1 hdot1 hdot_image_1 hdotvol1
 ```
+
 
 Connect with Sql Management Studio to 127.0.0.1,1402
