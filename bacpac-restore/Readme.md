@@ -28,6 +28,12 @@ Run the container
 docker run -p 1420:1433 --name c43 -d c43db
 ```
 
+Run this in powershell before cleanup if you get a not digitally signed error
+
+```
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted
+```
+
 Remove container and image to start from scratch
 
 ```
