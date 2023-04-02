@@ -11,6 +11,12 @@ Steps to show a demonstrations of the fundamentals of using SQL Server Container
 
 Open powershell
 
+Create the volume
+
+```
+docker volume create hdotvol1
+```
+
 Build the docker image
 
 ```
@@ -19,7 +25,7 @@ docker build -t hdot_image_1 .
 Run the container
 
 ```
-docker run -p 1402:1433 --name hdot1 -d hdot_image_1
+docker run --mount source=hdotvol1,destination=/var/opt/mssql  -p 1402:1433 --name hdot1 -d hdot_image_1
 ```
 
 Remove container and image to strat from scratch
