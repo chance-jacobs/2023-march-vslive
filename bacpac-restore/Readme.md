@@ -25,7 +25,7 @@ docker build -t c43db .
 Run the container
 
 ```
-docker run -p 1420:1433 --name c43 -d c43db
+docker run --mount source=c43vol,destination=/var/opt/mssql -p 1420:1433 --name c43 -d c43db
 ```
 
 Run this in powershell before cleanup if you get a not digitally signed error

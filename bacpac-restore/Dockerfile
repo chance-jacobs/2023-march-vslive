@@ -8,7 +8,6 @@ RUN apt-get update
 
 # Add the DACPAC to the image
 COPY sfwmdc43dbdev-2023-3-29-9-28.bacpac /src/sfwmdc43dbdev-2023-3-29-9-28.bacpac
-COPY postCreateCommand.sh /src/postCreateCommand.sh
 COPY db-init.sh /src/db-init.sh
 COPY entrypoint.sh /src/entrypoint.sh
 
@@ -20,4 +19,4 @@ ENV SA_PASSWORD=Chance#Demo
 EXPOSE 1433
 
 # Execute the entrypoint.sh file
-CMD /bin/bash /tmp/entrypoint.sh
+CMD /bin/bash /src/entrypoint.sh
