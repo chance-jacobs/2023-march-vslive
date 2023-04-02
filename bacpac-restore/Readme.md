@@ -9,12 +9,18 @@ Steps to show a demonstrations of the fundamentals of using SQL Server Container
 
 ## Commands to create the sql container and database
 
-Open powershell
+Open powershell as administrator
+
+Create the volume
+
+```
+docker volume create c43vol
+```
 
 Build the docker image
 
 ```
-docker build --build-arg PASSWORD=YourS3cureP@ass -t c43db .
+docker build -t c43db .
 ```
 Run the container
 
@@ -22,10 +28,10 @@ Run the container
 docker run -p 1420:1433 --name c43 -d c43db
 ```
 
-Remove container and image to strat from scratch
+Remove container and image to start from scratch
 
 ```
-./cleanup.ps1 c43 c43db
+./cleanup.ps1 c43 c43db c43vol
 ```
 
 Connect with Sql Management Studio to 127.0.0.1,1420
