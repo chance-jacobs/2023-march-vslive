@@ -7,10 +7,6 @@ COPY --chown=10001 . /src
 # Set working directory to /src
 WORKDIR /src
 
-# Configure external build arguments to allow configurability.
-ARG DBNAME=Database
-ARG PASSWORD
-
 # Configure the required environmental variables
 ENV ACCEPT_EULA=Y
 ENV SA_PASSWORD=6I9G2B]LG3H2
