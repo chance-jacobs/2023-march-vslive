@@ -31,7 +31,7 @@ docker run --mount source=hdotvol1,destination=/var/opt/mssql  -p 1402:1433 --na
 Remove container and image to strat from scratch
 
 ```
-./cleanup.ps1 hdot1 hdot_image_1
+./cleanup.ps1 hdot1 hdot_image_1 hdotvol1
 ```
 
 Connect with Sql Management Studio to 127.0.0.1,1402
