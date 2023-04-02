@@ -19,7 +19,7 @@ docker build -t hdot_image_1 .
 Run the container
 
 ```
-docker run -p 1402:1433 --name hdot1 -d hdot_image_1
+docker run -p 1402:1433 --name hdot1 -d hdot_image_1 -v sql2022volume:/var/opt/mssql
 ```
 
 Remove container and image to strat from scratch
