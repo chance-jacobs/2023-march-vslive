@@ -14,7 +14,7 @@ COPY entrypoint.sh /src/entrypoint.sh
 
 # Configure the required environmental variables
 ENV ACCEPT_EULA=Y
-ENV SA_PASSWORD=$PASSWORD
+ENV SA_PASSWORD=Chance#Demo
 
 # Expose the sql port
 EXPOSE 1433

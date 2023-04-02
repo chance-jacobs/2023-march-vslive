@@ -20,4 +20,4 @@ chmod +x /opt/sqlpackage/sqlpackage
 # See https://stackoverflow.com/a/51589787/488695
 echo "Resore bacpac"
 ( /opt/mssql/bin/sqlservr & ) | grep -q "Service Broker manager has started" 
-sqlpackage /a:Import /tcs:"Server=localhost;Database=sfwmdc43;User Id=sa;Password=YourS3cureP@ass;TrustServerCertificate=True;" /sf:/tmp/sfwmdc43dbdev-2023-3-29-9-28.bacpac
+sqlpackage /a:Import /tcs:"Server=localhost;Database=sfwmdc43;User Id=sa;Password=Chance#Demo;TrustServerCertificate=True;" /sf:/tmp/sfwmdc43dbdev-2023-3-29-9-28.bacpac
