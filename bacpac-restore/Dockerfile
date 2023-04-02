@@ -5,7 +5,6 @@ USER root
 
 # Install Unzip
 RUN apt-get update
-RUN apt-get install unzip -y
 
 # Add the DACPAC to the image
 COPY sfwmdc43dbdev-2023-3-29-9-28.bacpac /src/sfwmdc43dbdev-2023-3-29-9-28.bacpac
