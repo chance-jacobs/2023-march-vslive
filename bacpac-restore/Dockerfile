@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/mssql/server:2022-latest
 
 USER root
 
-# Install Unzip
+# Install update
 RUN apt-get update
 
 # Add the DACPAC to the image
